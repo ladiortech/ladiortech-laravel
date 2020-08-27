@@ -28,7 +28,7 @@
 					<a class="st-root-link item-products st-has-dropdown nav-link" href="/" data-dropdown="blocks">About Us </a>
 					<a href="/" class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="pages">Contact 
 					</a>
-					<a class="st-root-link item-company st-has-dropdown nav-link" data-dropdown="components" href="/">Portfolio </a>
+					<a href="/" class="st-root-link item-company st-has-dropdown nav-link" data-dropdown="components">Portfolio </a>
 					<a href="{{ route('career') }}" class="st-root-link item-blog st-has-dropdown nav-link" data-dropdown="blog">Career </a>
 					<!-- <a class="st-root-link item-shop st-has-dropdown nav-link" href="shop/index.html" data-dropdown="shop">Shop</a> -->
 				</li>
@@ -296,7 +296,7 @@
 					<div class="col-md-5 text-center text-md-left">
 						<nav class="nav justify-content-center justify-content-md-start">
 							<a class="nav-item nav-link" href="/">About</a> 
-							<a class="nav-item nav-link" href="/">Services</a> 
+							<a class="nav-item nav-link" href="{!! route('career') !!}">Career</a> 
 						</nav>
 					</div>
 					<div class="col-md-2 text-center">
@@ -316,3 +316,5 @@
 <!-- endinject -->
 </body>
 </html>
+
+	
