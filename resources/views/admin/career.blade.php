@@ -548,7 +548,7 @@
 		</div>
 
 		<div class="resume">
-			<h3>Send Resume</h3>
+			<h3>Send Resume  on Email : abc@gmail.com</h3>
 		</div>
 	</div>
 </section>
