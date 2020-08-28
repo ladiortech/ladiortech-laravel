@@ -17,3 +17,5 @@ Route::get('/', function () {
     return view('admin.index');
 });
 Route::view('career','admin.career')->name('career');
+Route::view('about-us','admin.about_us')->name('about-us');
+Route::view('pricing','admin.pricing')->name('pricing');

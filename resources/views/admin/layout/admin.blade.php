@@ -9,7 +9,7 @@
 	<link rel="apple-touch-icon" href="apple-touch-icon.html">
 	<link rel="icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-	<title>Dashcore - Premium Software & Startup HTML</title>
+	<title>@yield('title') Ladior Tech</title>
 	<link rel="stylesheet" href="{!! asset('admin/css/vendor.min.css') !!}">
 	<link rel="stylesheet" href="{!! asset('admin/css/dashcore.min.css') !!}">
 	@yield('style')
@@ -25,11 +25,10 @@
 				</li>
 				<li class="st-nav-section st-nav-primary nav-item">
 					<a class="st-root-link nav-link" href="/">Home </a>
-					<a class="st-root-link item-products st-has-dropdown nav-link" href="/" data-dropdown="blocks">About Us </a>
-					<a href="/" class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="pages">Contact 
-					</a>
-					<a class="st-root-link item-company st-has-dropdown nav-link" data-dropdown="components" href="/">Portfolio </a>
+					<a class="st-root-link item-company st-has-dropdown nav-link" data-dropdown="components" href="{!! route('pricing') !!}">Pricing </a>
 					<a href="{{ route('career') }}" class="st-root-link item-blog st-has-dropdown nav-link" data-dropdown="blog">Career </a>
+					<a class="st-root-link item-products st-has-dropdown nav-link" href="{!! route('about-us') !!}" data-dropdown="blocks">About Us </a>
+					</a>
 					<!-- <a class="st-root-link item-shop st-has-dropdown nav-link" href="shop/index.html" data-dropdown="shop">Shop</a> -->
 				</li>
 				<!-- <li class="st-nav-section st-nav-secondary nav-item">

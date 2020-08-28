@@ -259,8 +259,7 @@
 							<a href="javascript:;">
 								<img width="190px" src="{!! asset('admin/img/jain_super_market.png') !!}" alt="jain_super_market">
 								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="bold">Project name</p>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsum voluptatem nobis labore sit</p>
+									<p class="text-muted">Jain Super Bazar and willing to increase no of super markets.we provide all grossary items, fruits, vegetables, dairy&bakeris, ayurvedic products.</p>
 								</div>
 							</a>
 						</div>
@@ -270,8 +269,7 @@
 							<a href="javascript:;">
 								<img src="{!! asset('admin/img/theme1.png') !!}" alt="theme1">
 								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="bold">Project name</p>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsum voluptatem nobis labore sit</p>
+									<p class="text-muted">Theme Blue has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
 								</div>
 							</a>
 						</div>
@@ -281,8 +279,7 @@
 							<a href="javascript:;">
 								<img src="{!! asset('admin/img/theme2.png') !!}" alt="theme2">
 								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="bold">Project name</p>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsum voluptatem nobis labore sit</p>
+									<p class="text-muted">Gold theme has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
 								</div>
 							</a>
 						</div>
@@ -292,8 +289,7 @@
 							<a href="javascript:;">
 								<img src="{!! asset('admin/img/theme3.png') !!}" alt="theme3">
 								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="bold">Project name</p>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsum voluptatem nobis labore sit</p>
+									<p class="text-muted">Platinum Days has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
 								</div>
 							</a>
 						</div>
@@ -303,8 +299,7 @@
 							<a href="javascript:;">
 								<img src="{!! asset('admin/img/theme4.png') !!}" alt="theme4">
 								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="bold">Project name</p>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsum voluptatem nobis labore sit</p>
+									<p class="text-muted">Theme paris Trading has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
 								</div>
 							</a>
 						</div>
@@ -314,8 +309,7 @@
 							<a href="javascript:;">
 								<img src="{!! asset('admin/img/theme5.png') !!}" alt="theme5">
 								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="bold">Project name</p>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsum voluptatem nobis labore sit</p>
+									<p class="text-muted">The Solitaire has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
 								</div>
 							</a>
 						</div>
