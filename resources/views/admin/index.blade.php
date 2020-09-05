@@ -1,576 +1,844 @@
 @extends('admin.layout.admin')
+
 @section('content')
-	<!-- Integration Heading -->
-	<header class="header integrations-header section">
-		<div class="shapes-container">
-			<div class="shape shape-circle shape-circle-1" data-aos="fade-down" data-aos-delay="200">
-				<div>
-				</div>
-			</div>
-			<div class="shape shape-circle shape-circle-2" data-aos="zoom-in" data-aos-delay="300">
-				<div></div>
-			</div>
-			<div class="shape shape-square shape-square-1" data-aos="flip-right" data-aos-delay="400">
-				<div></div>
-			</div>
-			<div class="shape shape-square shape-square-2" data-aos="flip-left" data-aos-delay="400">
-				<div></div>
-			</div>
-			<div class="shape shape-square shape-square-3" data-aos="flip-left" data-aos-delay="200">
-				<div></div>
-			</div>
-			<div class="shape shape-ring shape-ring-1">
-				<div></div>
-			</div>
-			<div class="shape shape-ring shape-ring-2">
-				<div></div>
-			</div>
-			<div class="shape pattern pattern-dots">
-				<div></div>
-			</div>
-			<div class="static-shape background-shape-main">
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 mx-auto text-center">
-					<h1 class="bold font-md font-md-lg">DashCore fully integrates with multiple tools, it will make your customization experience a breeze</h1>
-					<p class="lead text-muted">From a simple HTML page to a complete module bundler, even a task runner, DashCore comes with ease integration for every need</p>
-					<a href="#!" class="btn btn-primary btn-lg btn-rounded bold px-4 mt-4">Join DashCore</a>
-				</div>
-			</div>
-		</div>
-		<div class="bubbles-wrap">
-			<div class="bubbles-container">
-			</div>
-		</div>
-	</header>
-	<!-- ./How it works -->
-	<section id="features" class="section how-it-works">
-		<div class="shapes-container">
-			<div class="shape shape-ring" data-aos="fade-right">
-				<div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="section-heading text-center">
-				<h2 class="bold">How it Works?</h2>
-				<p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nulla, voluptates. Architecto eum minima necessitatibus quo reiciendis!</p>
-			</div>
-			<div class="row gap-y text-center text-md-left">
-				<div class="col-md-4 py-4 text-center">
-					<div class="shapes-figure shapes-container">
-						<div class="shape shape-circle center-x">
-						</div>
-					</div>
-					<figure class="mockup mb-4">
-						<img src="{!! asset('admin/img/integration/steps/plan.svg') !!}" class="mb-3 image-responsive">
-					</figure>
-					<h5 class="bold">Choose a plan</h5>
-					<p class="text-muted">Ab ad aliquam assumenda beatae commodi distinctio dolore dolorum earum error et, exercitationem</p>
-				</div>
-				<div class="col-md-4 py-4 text-center">
-					<div class="shapes-figure shapes-container">
-						<div class="shape shape-circle center-x">
-						</div>
-					</div>
-					<figure class="mockup mb-4">
-						<img src="{!! asset('admin/img/integration/steps/payment.svg') !!}" class="mb-3 image-responsive">
-					</figure>
-					<h5 class="bold">Payment method</h5>
-					<p class="text-muted">Blanditiis cumque, eius error est et exercitationem, explicabo hic natus nobis odit porro quia</p>
-				</div>
-				<div class="col-md-4 py-4 text-center">
-					<div class="shapes-figure shapes-container">
-						<div class="shape shape-circle center-x">
-						</div>
-					</div>
-					<figure class="mockup mb-4">
-						<img src="{!! asset('admin/img/integration/steps/work.svg') !!}" class="mb-3 image-responsive">
-					</figure>
-					<h5 class="bold">Let&#39;s work</h5>
-					<p class="text-muted">A animi aperiam cupiditate eum incidunt, magni mollitia nam nemo non officia omnis, quasi quisquam</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section built-tech">
-		<div class="container">
-			<div class="shapes-container">
-				<div class="shape shape-circle" data-aos="fade-up">
-					<div>
-					</div>
-				</div>
-			</div>
-			<div class="row gap-y">
-				<div class="col-md-6 col-lg-7">
-					<div class="card shadow border-0">
-						<div class="card-body">
-							<div class="row">
-								<div class="col-md-8 b-md-r">
-									<span class="badge badge-primary badge-pill bold px-4 py-2">Better tech</span>
-									<h2 class="mt-3"><span class="bold">Industry leading</span> technology stack</h2>
-									<p class="text-muted">DashCore tech stack gives you everything your business needs to build robust integrtions</p>
-									<figure class="">
-										<img src="{!! asset('admin/img/logos/webpack.svg') !!}" class="img-responsive mx-auto" alt="">
-									</figure>
-								</div>
-								<div class="col-md-4 d-flex flex-column justify-content-around">
-									<div class="text-center">
-										<figure class="mockup"><img src="{!! asset('admin/img/logos/javascript.svg') !!}" alt="">
-										</figure>
-									</div>
-									<div class="text-center">
-										<figure class="mockup">
-											<img src="{!! asset('admin/img/logos/es6.svg') !!}" alt="">
-										</figure>
-									</div>
-									<div class="text-center">
-										<figure class="mockup">
-											<img src="{!! asset('admin/img/logos/node-sass.svg') !!}" alt="">
-										</figure>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-5">
-					<div class="shapes-container">
-						<div class="shape shape-ring shape-ring-1" data-aos="fade-up">
-							<div>
-							</div>
-						</div>
-					</div>
-					<div class="section-heading">
-						<figure class="mockup ml-0">
-							<img src="{!! asset('admin/img/integration/tech-globe.svg') !!}" alt="">
-						</figure>
-						<h2 class="my-3 font-md"><span class="bold">A complete technology stack</span> awaits for you</h2>
-						<p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum blanditiis pariatur excepturi provident molestias, ea non! Nesciunt impedit quo blanditiis.</p>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="media pb-3">
-								<div class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3">
-									<i data-feather="activity" class="stroke-primary"></i>
-								</div>
-								<div class="media-body">
-									<h5>Activity</h5>
-									<p>Get instant insight</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="media pb-3">
-								<div class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3">
-									<i data-feather="upload-cloud" class="stroke-primary"></i>
-								</div>
-								<div class="media-body">
-									<h5>Deploy</h5>
-									<p>Deploy your project</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="media pb-3">
-								<div class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3">
-									<i data-feather="zap" class="stroke-primary"></i>
-								</div>
-								<div class="media-body">
-									<h5>Fast</h5>
-									<p>Development lighting fast</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="media pb-3">
-								<div class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3">
-									<i data-feather="hexagon" class="stroke-primary"></i>
-								</div>
-								<div class="media-body">
-									<h5>Technology</h5>
-									<p>Ultimate technology</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Extend Core -->
-	<section class="section extending-core border-top bg-light edge bottom-right">
-		<div class="shapes-container">
-			<div class="shape shape-circle">
-				<div></div>
-			</div>
-		</div>
-		<div class="container pb-9">
-			<div class="row gap-y align-items-center">
-				<div class="col-lg-6">
-					<div class="section-heading">
-						<p class="text-primary bold small text-uppercase">enterprise integration</p>
-						<h2>Extend DashCore</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ipsum iste iure nihil non obcaecati quasi, sit? Aperiam asperiores atque, commodi debitis fugiat in nemo optio sint velit. Pariatur, sint!</p>
-					</div>
-					<a href="#" class="btn btn-rounded btn-outline-primary bw-2 mr-3">Know More</a> 
-					<a href="#" class="btn btn-rounded btn-primary bw-2 bold text-contrast">Register Account</a>
-				</div>
-				<div class="col-lg-6">
-					<div class="icons-wrapper position-relative">
-						<div class="floating icon icon-xl bg-contrast rounded-circle p-3 shadow m-0 absolute d-flex justify-content-center align-items-center" style="left: 100%; top: 30%;" data-aos="fade-left">
-							<img src="{!! asset('admin/img/integration/blossom.svg') !!}" class="img-responsive" alt="">
-						</div>
-						<div class="floating icon icon-xxl bg-contrast rounded-circle p-3 shadow m-0 absolute d-flex justify-content-center align-items-center" style="left: 60%; top: -10%;" data-aos="fade-left">
-							<img src="{!! asset('admin/img/integration/dockbit.svg') !!}" class="img-responsive" alt="">
-						</div>
-						<div class="floating icon icon-xxl bg-contrast rounded-circle p-3 shadow m-0 absolute d-flex justify-content-center align-items-center" style="left: 25%; top: 0%;" data-aos="fade-left">
-							<img src="{!! asset('admin/img/integration/zapier.svg') !!}" class="img-responsive" alt="">
-						</div>
-						<div class="floating icon icon-2xl bg-contrast rounded-circle p-3 shadow m-0 absolute d-flex justify-content-center align-items-center" style="left: 0%; top: 50%;" data-aos="fade-left">
-							<img src="{!! asset('admin/img/integration/bitnami.svg') !!}" class="img-responsive" alt="">
-						</div>
-						<div class="floating icon icon-2xxl bg-contrast rounded-circle p-3 shadow m-0 absolute d-flex justify-content-center align-items-center" style="left: 23%; top: 70%;" data-aos="fade-left">
-							<img src="{!! asset('admin/img/integration/slack.svg') !!}" class="img-responsive" alt="">
-						</div>
-						<div class="floating icon icon-xxl bg-contrast rounded-circle p-3 shadow m-0 absolute d-flex justify-content-center align-items-center" style="left: 65%; top: 44%;" data-aos="fade-left">
-							<img src="{!! asset('admin/img/integration/monero.svg') !!}" class="img-responsive" alt="">
-						</div>
-						<div class="floating icon icon-xl bg-contrast rounded-circle p-3 shadow m-0 absolute d-flex justify-content-center align-items-center" style="left: 95%; top: 83%;" data-aos="fade-left">
-							<img src="{!! asset('admin/img/integration/dropbox.svg') !!}" class="img-responsive" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section bg-contrast edge bottom-right latest-projects">
-		<div class="container bring-to-front pt-0">
-			<div class="shadow-lg bg-contrast rounded">
-				<div class="bg-contrast rounded-bottom p-4">
-					<p class="bold lead my-0">Latest projects</p>
-					<p class="text-muted my-0">Take a look at our latest projects, those customer have trust in our services to bring their business to the next level</p>
-				</div>
-				<div class="row no-gutters">
-					<div class="col-md-4">
-						<div class="project-detail zoom-image overlay overlay-secondary">
-							<a href="javascript:;">
-								<img width="190px" src="{!! asset('admin/img/jain_super_market.png') !!}" alt="jain_super_market">
-								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="text-muted">Jain Super Bazar and willing to increase no of super markets.we provide all grossary items, fruits, vegetables, dairy&bakeris, ayurvedic products.</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="project-detail zoom-image overlay overlay-secondary">
-							<a href="javascript:;">
-								<img src="{!! asset('admin/img/theme1.png') !!}" alt="theme1">
-								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="text-muted">Theme Blue has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="project-detail zoom-image overlay overlay-secondary">
-							<a href="javascript:;">
-								<img src="{!! asset('admin/img/theme2.png') !!}" alt="theme2">
-								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="text-muted">Gold theme has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="project-detail zoom-image overlay overlay-secondary">
-							<a href="javascript:;">
-								<img src="{!! asset('admin/img/theme3.png') !!}" alt="theme3">
-								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="text-muted">Platinum Days has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="project-detail zoom-image overlay overlay-secondary">
-							<a href="javascript:;">
-								<img src="{!! asset('admin/img/theme4.png') !!}" alt="theme4">
-								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="text-muted">Theme paris Trading has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="project-detail zoom-image overlay overlay-secondary">
-							<a href="javascript:;">
-								<img src="{!! asset('admin/img/theme5.png') !!}" alt="theme5">
-								<div class="description bg-dark text-contrast p-1 p-md-2">
-									<p class="text-muted">The Solitaire has been family run since the beginning. We take pride in quality of the jewelry we provide, and are proud to place our family name upon it.</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section">
-		<div class="container bring-to-front">
-			<div class="row gap-y align-items-center justify-content-between">
-				<div class="col-md-6 order-md-last">
-					<div class="mb-5">
-						<p class="text-primary bold">Fill in the form</p>
-						<h2>Your success is our success</h2>
-						<p class="lead text-muted">If you're looking to be part of the most suitable template, just fill in the form, we're sure we can build great things together
-						</p>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="d-flex align-items-center">
-								<div class="icon-md bg-primary p-2 rounded-circle center-flex mr-3">
-									<i data-feather="check" class="stroke-contrast"></i>
-								</div>
-								<p class="text-primary">Service integrations</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="d-flex align-items-center">
-								<div class="icon-md bg-primary p-2 rounded-circle center-flex mr-3">
-									<i data-feather="check" class="stroke-contrast"></i>
-								</div>
-								<p class="text-primary">Partners integration</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="d-flex align-items-center">
-								<div class="icon-md bg-primary p-2 rounded-circle center-flex mr-3">
-									<i data-feather="check" class="stroke-contrast"></i>
-								</div>
-								<p class="text-primary">Right technology</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="d-flex align-items-center">
-								<div class="icon-md bg-primary p-2 rounded-circle center-flex mr-3">
-									<i data-feather="check" class="stroke-contrast"></i>
-								</div>
-								<p class="text-primary">Get discovered</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-5" data-aos="fade-right">
-					<div class="card shadow-lg">
-						<img src="https://picsum.photos/500/300?random=&amp;gravity=south" alt="..." class="card-img-top">
-						<div class="card-body">
-							<form class="form">
-								<div class="form-group">
-									<label for="name">Name</label> 
-									<input type="text" class="form-control" id="name" placeholder="Name">
-								</div>
-								<div class="form-group">
-									<label for="email">Email</label> 
-									<input type="email" class="form-control" id="email" placeholder="Email">
-								</div>
-								<div class="form-group">
-									<label for="company">Company</label> 
-									<input type="text" class="form-control" id="company" placeholder="Company">
-								</div>
-								<div class="form-group mt-5">
-									<button class="btn btn-rounded btn-primary btn-block btn-lg text-center" type="submit">Send my application</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Why Choose Us -->
-	<section class="section why-choose-us">
-		<div class="shapes-container">
-			<div class="pattern pattern-dots"></div>
-		</div>
-		<div class="container pb-8 bring-to-front">
-			<div class="row gap-y">
-				<div class="col-md-6">
-					<div class="mb-5">
-						<h2 class="heading-line">Ease external tools integration</h2>
-						<p class="text-muted lead">Easely integrates with another templates of our own creation.</p>
-					</div>
-					<div class="media pb-3">
-						<div class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3">
-							<i data-feather="box" class="stroke-primary"></i>
-						</div>
-						<div class="media-body">
-							<h5>Integrations</h5>
-							<p>We designed DashCore to be able to integrate with additional templates designed by our team</p>
-						</div>
-					</div>
-					<div class="media">
-						<div class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3">
-							<i data-feather="layers" class="stroke-primary"></i>
-						</div>
-						<div class="media-body">
-							<h5>Components</h5>
-							<p>All its components share a core styling, this will allow to share multiple components where you need</p>
-						</div>
-					</div>
-					<hr class="my-5">
-					<div class="text-center text-md-left">
-						<a href="#!" class="btn btn-primary btn-rounded">Know More</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="rotated-mockups device-twin">
-						<div class="browser absolute shadow-lg">
-							<img src="{!! asset('admin/img/screens/tablet/1.png') !!}" alt="..."></div>
-							<div class="front iphone-x">
-								<div class="screen">
-									<img src="{!! asset('admin/img/screens/app/1.png') !!}" alt="...">
-								</div>
-								<div class="notch"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ./Brands -->
-		<section class="section bg-light edge top-left">
-			<div class="container bring-to-front">
-				<div class="row gap-y">
-					<div class="col-md-3 col-xs-4 col-6 px-md-5">
-						<img src="{!! asset('admin/img/logos/1.png') !!}" alt="" class="img-responsive mx-auto op-7" style="max-height: 60px;">
-					</div>
-					<div class="col-md-3 col-xs-4 col-6 px-md-5">
-						<img src="{!! asset('admin/img/logos/2.png') !!}" alt="" class="img-responsive mx-auto op-7" style="max-height: 60px;">
-					</div>
-					<div class="col-md-3 col-xs-4 col-6 px-md-5">
-						<img src="{!! asset('admin/img/logos/3.png') !!}" alt="" class="img-responsive mx-auto op-7" style="max-height: 60px;">
-					</div>
-					<div class="col-md-3 col-xs-4 col-6 px-md-5">
-						<img src="{!! asset('admin/img/logos/4.png') !!}" alt="" class="img-responsive mx-auto op-7" style="max-height: 60px;">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section slider-testimonials bg-light">
-			<div class="container bring-to-front">
-				<div class="section-heading text-center">
-					<h2>Our customers have something to say</h2>
-					<p class="lead text-muted">They are the best, our customer want to let you know how DashCore is helping them to achieve their goals and how simple is to use it</p>
-				</div>
-				<div class="card shadow-lg">
-					<div class="row no-gutters">
-						<div class="col-md-6">
-							<!-- Images slider, will fade -->
-							<div class="swiper-container h-100" data-sw-effect="fade" data-sw-space-between="0">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<figure class="m-0 image-background cover" style="background-image: url({!! asset('admin/img/testimonials/3.jpg') !!}"><img src="{!! asset('admin/img/testimonials/3.jpg') !!}" alt="..." class="img--responsive invisible">
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure class="m-0 image-background cover" style="background-image: url({!! asset('admin/img/testimonials/2.jpg') !!}"><img src="{!! asset('admin/img/testimonials/2.jpg') !!}" alt="..." class="img--responsive invisible">
-										</figure>
-									</div>
-									<div class="swiper-slide"><figure class="m-0 image-background cover" style="background-image: url({!! asset('admin/img/testimonials/5.jpg') !!}"><img src="{!! asset('admin/img/testimonials/5.jpg') !!}" alt="..." class="img--responsive invisible">
-									</figure>
-								</div>
-								<div class="swiper-slide">
-									<figure class="m-0 image-background cover" style="background-image: url({!! asset('admin/img/testimonials/6.jpg') !!})"><img src="{!! asset('admin/img/testimonials/6.jpg') !!}" alt="..." class="img--responsive invisible">
-									</figure>
-								</div>
-							</div>
-							<div class="divider">
-								<div></div>
-							</div>
-						</div>
-						<!-- Prev button -->
-						<div class="swiper-button swiper-button-prev shadow">
-							<i data-feather="arrow-left"></i>
-						</div>
-					</div>
-					<div class="col-md-6"><!-- Testimonials slider, will slide -->
-						<div class="swiper-container h-100">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="card-body h-100 d-flex flex-column justify-content-center">
-										<blockquote class="blockquote text-center mb-0">
-											<figure class="mockup mb-5">
-												<img src="{!! asset('admin/img/logos/companies/1.svg') !!}" alt="..." class="img-responsive">
-											</figure>
-											<p class="mb-5 mb-md-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quas sunt enim tempore minima tenetur voluptatem provident. Incidunt accusantium.</p>
-											<footer class="blockquote-footer">
-												<span class="h6 text-uppercase">Jane Doe</span>
-											</footer>
-										</blockquote>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="card-body h-100 d-flex flex-column justify-content-center">
-										<blockquote class="blockquote text-center mb-0">
-											<figure class="mockup mb-5">
-												<img src="{!! asset('admin/img/logos/companies/2.svg') !!}" alt="..." class="img-responsive">
-											</figure>
-											<p class="mb-5 mb-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo harum eaque voluptatibus est obcaecati exercitationem maxime illo nihil voluptatem.</p>
-											<footer class="blockquote-footer">
-												<span class="h6 text-uppercase">John Doe</span>
-											</footer>
-										</blockquote>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="card-body h-100 d-flex flex-column justify-content-center">
-										<blockquote class="blockquote text-center mb-0">
-											<figure class="mockup mb-5"><img src="{!! asset('admin/img/logos/companies/1.svg') !!}" alt="..." class="img-responsive"></figure>
-											<p class="mb-5 mb-md-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quas sunt enim tempore minima tenetur voluptatem provident. Incidunt accusantium.</p>
-											<footer class="blockquote-footer">
-												<span class="h6 text-uppercase">Mauro</span>
-											</footer>
-										</blockquote>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="card-body h-100 d-flex flex-column justify-content-center">
-										<blockquote class="blockquote text-center mb-0">
-											<figure class="mockup mb-5">
-												<img src="{!! asset('admin/img/logos/companies/2.svg') !!}" alt="..." class="img-responsive">
-											</figure>
-											<p class="mb-5 mb-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo harum eaque voluptatibus est obcaecati exercitationem maxime illo nihil voluptatem.</p>
-											<footer class="blockquote-footer">
-												<span class="h6 text-uppercase">5studios team</span>
-											</footer>
-										</blockquote>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Next button -->
-						<div class="swiper-button swiper-button-next shadow">
-							<i data-feather="arrow-right"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ./CTA - Create Account -->
-	<section class="section bg-contrast edge top-left">
-		<div class="container pt-5">
-			<div class="d-flex align-items-center flex-column flex-md-row">
-				<div class="text-center text-md-left">
-					<p class="light mb-0 text-primary lead">Ready to get started?</p>
-					<h2 class="mt-0">Create an account now</h2>
-				</div>
-				<a href="register.html" class="btn btn-primary btn-rounded mt-3 mt-md-0 ml-md-auto">Create DashCore account</a>
-			</div>
-		</div>
-	</section>
-		
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="http://webapplayers.com/inspinia_admin-v2.9.3/search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" href="profile.html">
+                                    <img alt="image" class="rounded-circle" src="{!! asset('admin/img/a7.jpg') !!}">
+                                </a>
+                                <div>
+                                    <small class="float-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" href="profile.html">
+                                    <img alt="image" class="rounded-circle" src="{!! asset('admin/img/a4.jpg') !!}">
+                                </a>
+                                <div>
+                                    <small class="float-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" href="profile.html">
+                                    <img alt="image" class="rounded-circle" src="{!! asset('admin/img/profile.jpg') !!}">
+                                </a>
+                                <div>
+                                    <small class="float-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html" class="dropdown-item">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html" class="dropdown-item">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="profile.html" class="dropdown-item">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="float-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="grid_options.html" class="dropdown-item">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html" class="dropdown-item">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                        <i class="fa fa-sign-out"></i>{{ __('Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </li>
+                <li>
+                    <a class="right-sidebar-toggle">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+
+            <div class="wrapper wrapper-content animated fadeIn">
+
+                <div class="p-w-md m-t-sm">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <h1 class="m-b-xs">
+                                26,900
+                            </h1>
+                            <small>
+                                Sales in current month
+                            </small>
+                            <div id="sparkline1" class="m-b-sm"></div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <small class="stats-label">Pages / Visit</small>
+                                    <h4>236 321.80</h4>
+                                </div>
+
+                                <div class="col-4">
+                                    <small class="stats-label">% New Visits</small>
+                                    <h4>46.11%</h4>
+                                </div>
+                                <div class="col-4">
+                                    <small class="stats-label">Last week</small>
+                                    <h4>432.021</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="m-b-xs">
+                                98,100
+                            </h1>
+                            <small>
+                                Sales in last 24h
+                            </small>
+                            <div id="sparkline2" class="m-b-sm"></div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <small class="stats-label">Pages / Visit</small>
+                                    <h4>166 781.80</h4>
+                                </div>
+
+                                <div class="col-4">
+                                    <small class="stats-label">% New Visits</small>
+                                    <h4>22.45%</h4>
+                                </div>
+                                <div class="col-4">
+                                    <small class="stats-label">Last week</small>
+                                    <h4>862.044</h4>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-sm-4">
+
+                            <div class="row m-t-xs">
+                                <div class="col-6">
+                                    <h5 class="m-b-xs">Income last month</h5>
+                                    <h1 class="no-margins">160,000</h1>
+                                    <div class="font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="m-b-xs">Sals current year</h5>
+                                    <h1 class="no-margins">42,120</h1>
+                                    <div class="font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                                </div>
+                            </div>
+
+
+                            <table class="table small m-t-sm">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>142</strong> Projects
+
+                                    </td>
+                                    <td>
+                                        <strong>22</strong> Messages
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>61</strong> Comments
+                                    </td>
+                                    <td>
+                                        <strong>54</strong> Articles
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>154</strong> Companies
+                                    </td>
+                                    <td>
+                                        <strong>32</strong> Clients
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="small float-left col-md-3 m-l-lg m-t-md">
+                                <strong>Sales char</strong> have evolved over the years sometimes.
+                            </div>
+                            <div class="small float-right col-md-3 m-t-md text-right">
+                                <strong>There are many</strong> variations of passages of Lorem Ipsum available, but the majority have suffered.
+                            </div>
+                            <div class="flot-chart m-b-xl">
+                                <div class="flot-chart-content" id="flot-dashboard5-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ibox">
+
+
+
+                                <div class="ibox-content">
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="product_name">Project Name</label>
+                                                <input type="text" id="product_name" name="product_name" value="" placeholder="Project Name" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="price">Name</label>
+                                                <input type="text" id="price" name="price" value="" placeholder="Name" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="quantity">Company</label>
+                                                <input type="text" id="quantity" name="quantity" value="" placeholder="Company" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="status">Status</label>
+                                                <select name="status" id="status" class="form-control">
+                                                    <option value="1" selected="">Completed</option>
+                                                    <option value="0">Pending</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Master project</td>
+                                                <td>Patrick Smith</td>
+                                                <td>$892,074</td>
+                                                <td>Inceptos Hymenaeos Ltd</td>
+                                                <td><strong>20%</strong></td>
+                                                <td>Jul 14, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Alpha project</td>
+                                                <td>Alice Jackson</td>
+                                                <td>$963,486</td>
+                                                <td>Nec Euismod In Company</td>
+                                                <td><strong>40%</strong></td>
+                                                <td>Jul 16, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Betha project</td>
+                                                <td>John Smith</td>
+                                                <td>$996,824</td>
+                                                <td>Erat Volutpat</td>
+                                                <td><strong>75%</strong></td>
+                                                <td>Jul 18, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Gamma project</td>
+                                                <td>Anna Jordan</td>
+                                                <td>$105,192</td>
+                                                <td>Tellus Ltd</td>
+                                                <td><strong>18%</strong></td>
+                                                <td>Jul 22, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Alpha project</td>
+                                                <td>Alice Jackson</td>
+                                                <td>$674,803</td>
+                                                <td>Nec Euismod In Company</td>
+                                                <td><strong>40%</strong></td>
+                                                <td>Jul 16, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Master project</td>
+                                                <td>Patrick Smith</td>
+                                                <td>$174,729</td>
+                                                <td>Inceptos Hymenaeos Ltd</td>
+                                                <td><strong>20%</strong></td>
+                                                <td>Jul 14, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Gamma project</td>
+                                                <td>Anna Jordan</td>
+                                                <td>$823,198</td>
+                                                <td>Tellus Ltd</td>
+                                                <td><strong>18%</strong></td>
+                                                <td>Jul 22, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Project <small>This is example of project</small></td>
+                                                <td>Patrick Smith</td>
+                                                <td>$778,696</td>
+                                                <td>Inceptos Hymenaeos Ltd</td>
+                                                <td><strong>20%</strong></td>
+                                                <td>Jul 14, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Alpha project</td>
+                                                <td>Alice Jackson</td>
+                                                <td>$861,063</td>
+                                                <td>Nec Euismod In Company</td>
+                                                <td><strong>40%</strong></td>
+                                                <td>Jul 16, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Betha project</td>
+                                                <td>John Smith</td>
+                                                <td>$109,125</td>
+                                                <td>Erat Volutpat</td>
+                                                <td><strong>75%</strong></td>
+                                                <td>Jul 18, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Gamma project</td>
+                                                <td>Anna Jordan</td>
+                                                <td>$600,978</td>
+                                                <td>Tellus Ltd</td>
+                                                <td><strong>18%</strong></td>
+                                                <td>Jul 22, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Alpha project</td>
+                                                <td>Alice Jackson</td>
+                                                <td>$150,161</td>
+                                                <td>Nec Euismod In Company</td>
+                                                <td><strong>40%</strong></td>
+                                                <td>Jul 16, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Project <small>This is example of project</small></td>
+                                                <td>Patrick Smith</td>
+                                                <td>$160,586</td>
+                                                <td>Inceptos Hymenaeos Ltd</td>
+                                                <td><strong>20%</strong></td>
+                                                <td>Jul 14, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Gamma project</td>
+                                                <td>Anna Jordan</td>
+                                                <td>$110,612</td>
+                                                <td>Tellus Ltd</td>
+                                                <td><strong>18%</strong></td>
+                                                <td>Jul 22, 2015</td>
+                                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        <div class="footer">
+            <div class="float-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2018
+            </div>
+        </div>
+        </div>
+        <div id="right-sidebar">
+            <div class="sidebar-container">
+
+                <ul class="nav nav-tabs navs-3">
+                    <li>
+                        <a class="nav-link active" data-toggle="tab" href="#tab-1"> Notes </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" data-toggle="tab" href="#tab-2"> Projects </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" data-toggle="tab" href="#tab-3"> <i class="fa fa-gear"></i> </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+
+
+                    <div id="tab-1" class="tab-pane active">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-comments-o"></i> Latest Notes</h3>
+                            <small><i class="fa fa-tim"></i> You have 10 new message.</small>
+                        </div>
+
+                        <div>
+
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="image" class="rounded-circle message-avatar" src="{!! asset('admin/img/a1.jpg') !!}">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+
+                                        There are many variations of passages of Lorem Ipsum available.
+                                        <br>
+                                        <small class="text-muted">Today 4:21 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="image" class="rounded-circle message-avatar" src="{!! asset('admin/img/a2.jpg') !!}">
+                                    </div>
+                                    <div class="media-body">
+                                        The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                        <br>
+                                        <small class="text-muted">Yesterday 2:45 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="image" class="rounded-circle message-avatar" src="{!! asset('admin/img/a3.jpg') !!}">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        Mevolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                        <br>
+                                        <small class="text-muted">Yesterday 1:10 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="image" class="rounded-circle message-avatar" src="{!! asset('admin/img/a4.jpg') !!}">
+                                    </div>
+
+                                    <div class="media-body">
+                                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                                        <br>
+                                        <small class="text-muted">Monday 8:37 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="image" class="rounded-circle message-avatar" src="{!! asset('admin/img/a8.jpg') !!}">
+                                    </div>
+                                    <div class="media-body">
+
+                                        All the Lorem Ipsum generators on the Internet tend to repeat.
+                                        <br>
+                                        <small class="text-muted">Today 4:21 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="image" class="rounded-circle message-avatar" src="{!! asset('admin/img/a7.jpg') !!}">
+                                    </div>
+                                    <div class="media-body">
+                                        Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                        <br>
+                                        <small class="text-muted">Yesterday 2:45 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="image" class="rounded-circle message-avatar" src="{!! asset('admin/img/a3.jpg') !!}">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below.
+                                        <br>
+                                        <small class="text-muted">Yesterday 1:10 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="image" class="rounded-circle message-avatar" src="{!! asset('admin/img/a4.jpg') !!}">
+                                    </div>
+                                    <div class="media-body">
+                                        Uncover many web sites still in their infancy. Various versions have.
+                                        <br>
+                                        <small class="text-muted">Monday 8:37 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="tab-2" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-cube"></i> Latest projects</h3>
+                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                        </div>
+
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Business valuation</h4>
+                                    It is a long established fact that a reader will be distracted.
+
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Contract with Company </h4>
+                                    Many desktop publishing packages and web page editors.
+
+                                    <div class="small">Completion with: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Meeting</h4>
+                                    By the readable content of a page when looking at its layout.
+
+                                    <div class="small">Completion with: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-primary float-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    <!--<div class="small float-right m-t-xs">9 hours ago</div>-->
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Business valuation</h4>
+                                    It is a long established fact that a reader will be distracted.
+
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Contract with Company </h4>
+                                    Many desktop publishing packages and web page editors.
+
+                                    <div class="small">Completion with: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Meeting</h4>
+                                    By the readable content of a page when looking at its layout.
+
+                                    <div class="small">Completion with: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-primary float-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    <!--<div class="small float-right m-t-xs">9 hours ago</div>-->
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-gears"></i> Settings</h3>
+                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                        </div>
+
+                        <div class="setings-item">
+                    <span>
+                        Show notifications
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                                    <label class="onoffswitch-label" for="example">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Disable Chat
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
+                                    <label class="onoffswitch-label" for="example2">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Enable history
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                                    <label class="onoffswitch-label" for="example3">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Show charts
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                                    <label class="onoffswitch-label" for="example4">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Offline users
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                                    <label class="onoffswitch-label" for="example5">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Global search
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                                    <label class="onoffswitch-label" for="example6">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Update everyday
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                                    <label class="onoffswitch-label" for="example7">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <h4>Settings</h4>
+                            <div class="small">
+                                I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                And typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
 @endsection
