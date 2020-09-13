@@ -35,8 +35,8 @@
 			<div class="row">
 				<div class="col-md-10 mx-auto text-center">
 					<h1 class="bold font-md font-md-lg">Ladior Tech fully integrates with multiple tools, it will make your customization experience a breeze</h1>
-					<p class="lead text-muted">From a simple HTML page to a complete module bundler, even a task runner, Ladior Tech comes with ease integration for every need</p>
-					<a href="#!" class="btn btn-primary btn-lg btn-rounded bold px-4 mt-4">Join Ladior Tech</a>
+					<p class="lead text-muted">We Have Some Openings.</p>
+					<a href="{{ url('/career') }}" class="btn btn-primary btn-lg btn-rounded bold px-4 mt-4">Join Ladior Tech</a>
 				</div>
 			</div>
 		</div>
