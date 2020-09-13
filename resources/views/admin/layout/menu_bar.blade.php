@@ -33,7 +33,7 @@
             <a href=""><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
          </li>
          <li>
-            <a href="attendance.php" aria-expanded="false">
+            <a href="{!! route('attendance') !!}" aria-expanded="false">
             <i class="fa fa-bar-chart-o"></i> <span class="nav-label">Attendance</span></a>
          </li>
       </ul>

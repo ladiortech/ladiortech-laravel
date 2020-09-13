@@ -22,9 +22,12 @@ Route::view('pricing','front.pricing')->name('pricing');
 
 Route::get('adminp/login','Auth\LoginController@showLoginForm')->name('get-login');
 Route::get('adminp/register','Auth\RegisterController@showRegistrationForm')->name('get-register');
-Route::group(['prefix'=>'adminp','middleware'=>'auth'],function(){
+Route::group(['prefix'=>'adminp','middleware'=>['auth','user']],function(){
 
-    Route::get('/','AdminController@index')->name('dashboard')->middleware('auth');
+    Route::get('/','AdminController@index')->name('dashboard');
+    Route::get('/attendance','AttendanceController@index')->name('attendance');
+    Route::post('/in-logtime','AttendanceController@inLog')->name('in-logtime');
+    Route::post('/out-logtime','AttendanceController@outLog')->name('out-logtime');
 });
 // Auth::routes();
 Route::post('logout','Auth\LoginController@logout')->middleware('web')->name('logout');

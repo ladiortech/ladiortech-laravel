@@ -8,6 +8,8 @@
       <link href="{!! asset('admin/font-awesome/css/font-awesome.css') !!}" rel="stylesheet">
       <link href="{!! asset('admin/css/animate.css') !!}" rel="stylesheet">
       <link href="{!! asset('admin/css/style.css') !!}" rel="stylesheet">
+      <link href="{!! asset('admin/css/plugins/dataTables/datatables.min.css') !!}" rel="stylesheet">
+      <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
       @yield('style')
    </head>
    <body>
@@ -37,6 +39,8 @@
       <script src="{!! asset('admin/js/plugins/pace/pace.min.js') !!}"></script>
       <!-- Sparkline -->
       <script src="{!! asset('admin/js/plugins/sparkline/jquery.sparkline.min.js') !!}"></script>
+      <script src="{!! asset('admin/js/plugins/dataTables/datatables.min.js') !!}"></script>
+    <script src="{!! asset('admin/js/plugins/dataTables/dataTables.bootstrap4.min.js') !!}"></script>
       @yield('scripts')
       <script>
          $(document).ready(function() {

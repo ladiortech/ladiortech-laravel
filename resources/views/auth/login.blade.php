@@ -22,6 +22,11 @@
             </div>
             <h3>Welcome to Ladior Tech</h3>
             <p>Login in.</p>
+            @if (session('error'))
+                <div class="alert alert-danger" role="alert">
+                  {{ session('error') }}
+                </div>
+            @endif
             <form class="m-t" role="form" method="POST" action="{{ route('login') }}">
                 @csrf
                 <div class="form-group">
