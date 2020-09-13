@@ -3,24 +3,22 @@
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
         <div class="col-lg-12">
-            <div class="row">
-
-                <span class="status">{!! Auth::user()->status == 1 ? 'OUT' : 'IN' !!} </span>
-                <div class="switch">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" class="onoffswitch-checkbox" id="example1" @if(Auth::user()->status == 1) checked="" @endif>
-                                    <label class="onoffswitch-label" for="example1">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                {{-- <input type="checkbox" name="active" value="active" @if(Auth::user()->status == 1) checked="" @endif id="active"> --}}
-            </div>
+           
             <div class="ibox ">
                 <div class="ibox-title">
                     <h5>Attendance</h5>
-                    
+                    <div class="right">
+                        <span class="status">{!! Auth::user()->status == 1 ? 'OUT' : 'IN' !!} </span>
+                        <div class="switch">
+                            <div class="onoffswitch">
+                                <input type="checkbox" class="onoffswitch-checkbox" id="example1" @if(Auth::user()->status == 1) checked="" @endif>
+                                <label class="onoffswitch-label" for="example1">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="ibox-content">
 
@@ -168,7 +166,7 @@
     $(document).on('click','.close-log-modal',function(e){
         e.preventDefault();
         $('.status').html('OUT');
-        $('#example1').click();
+        $('#example1').attr('checked',true);
         $('#outModal').modal('hide');
     })
 </script>

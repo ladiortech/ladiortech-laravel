@@ -12,7 +12,7 @@
                 <div class="ibox-content">
 
                     <div class="table-responsive">
-                        <table class="table table-striped table-bordered table-hover dataTables-example" >
+                        <table class="table table-striped table-bordered table-hover log-table" >
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -51,15 +51,11 @@
     </div>
 </div>
 
-<!-- Modal -->
-
-</div>
-</div>
 @endsection
 @section('scripts')
 <script>
     $(document).ready(function(){
-        $('.dataTables-example').DataTable({
+        $('.log-table').DataTable({
             pageLength: 25,
             responsive: true,
             dom: '<"html5buttons"B>lTfgitp',
