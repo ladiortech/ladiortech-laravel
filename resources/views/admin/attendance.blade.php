@@ -28,23 +28,28 @@
                         <table class="table table-striped table-bordered table-hover dataTables-example" >
                             <thead>
                                 <tr>
+                                    <th>No</th>
                                     <th>Date</th>
                                     <th>Hours</th>
+                                    <th>Options</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($logs as $log)
-                                    <tr {{-- class="gradeX" --}}>
-                                    <td>{!! $log->date !!}</td>
-                                    <td>{!! $log->total/60 !!}</td>
-
-                                </tr>    
+                                @foreach($logs as $key=> $log)
+                                    <tr>
+                                        <td>{!! $key+1 !!}</td>
+                                        <td>{!! $log->date !!}</td>
+                                        <td>{!! number_format((float)($log->total/60), 2, '.', ''); !!}</td>
+                                        <td><a href="{!! route('log-details',$log->date) !!}" class="btn btn-primary"><i class="fa fa-eye"></i></a></td>
+                                    </tr>    
                                 @endforeach
                             </tbody>
                             <tfoot>
                                 <tr>
+                                    <th>No</th>
                                     <th>Date</th>
                                     <th>Hours</th>
+                                    <th>Options</th>
                                 </tr>
                             </tfoot>
                         </table>

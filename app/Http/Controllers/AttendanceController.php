@@ -11,7 +11,7 @@ class AttendanceController extends Controller
     //
     public function index()
     {
-    	$logs = Log::where('user_id','=',Auth::id())->select(DB::raw('sum(total_minutes) as total'),'date')->groupBy('date')->get();
+    	$logs = Log::where('user_id','=',Auth::id())->select(DB::raw('sum(total_minutes) as total'),'date')->groupBy('date')->orderBy('date','desc')->get();
     	return view('admin.attendance',compact('logs'));
     }
 
@@ -40,5 +40,10 @@ class AttendanceController extends Controller
     	$user->status = '0';
     	$user->save();
     	return response('success',202);
+    }
+    public function getLogDetails($date)
+    {
+    	$logs = Log::where([['user_id','=',Auth::id()],['date','=',$date]])->get();
+    	return view('admin.log_details',compact('logs'));
     }
 }

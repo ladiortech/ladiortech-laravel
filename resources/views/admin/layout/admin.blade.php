@@ -17,7 +17,7 @@
          @include('admin.layout.menu_bar')
          <div id="page-wrapper" class="gray-bg">
             @include('admin.layout.top_bar')
-            @yield('content');
+            @yield('content')
          </div>
       </div>
       <!-- Mainly scripts -->
