@@ -24,7 +24,7 @@ Route::get('adminp/login','Auth\LoginController@showLoginForm')->name('get-login
 Route::get('adminp/register','Auth\RegisterController@showRegistrationForm')->name('get-register');
 Route::group(['prefix'=>'adminp','middleware'=>'auth'],function(){
 
-    Route::get('/','AdminController@index')->name('dashboard');
+    Route::get('/','AdminController@index')->name('dashboard')->middleware('auth');
 });
 // Auth::routes();
 Route::post('logout','Auth\LoginController@logout')->middleware('web')->name('logout');
