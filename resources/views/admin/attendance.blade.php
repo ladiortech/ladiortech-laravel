@@ -62,12 +62,12 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="outModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="outModal" tabindex="-1" role="dialog" data-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Log</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close close-log-modal" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -80,7 +80,7 @@
           </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary close-log-modal"  data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary" id="log-save">Save</button>
       </div>
     </div>
@@ -147,17 +147,29 @@
         e.preventDefault();
         var description = $('#description').val();
         var log_id = $('#log_id').val();
-        $.ajax({
-            url:'{!! route("out-logtime") !!}',
-            type:'post',
-            data:{description:description,log_id:log_id , "_token": "{{ csrf_token() }}"},
-            success:function(response){
-                alert('success');
-                $('#outModal').modal('hide');
-                location.reload();
+        if (description) {
 
-            }
-        })
+            $.ajax({
+                url:'{!! route("out-logtime") !!}',
+                type:'post',
+                data:{description:description,log_id:log_id , "_token": "{{ csrf_token() }}"},
+                success:function(response){
+                    alert('success');
+                    $('#outModal').modal('hide');
+                    location.reload();
+
+                }
+            })
+        }
+        else{
+            alert('Please enter description first');   
+        }
+    })
+    $(document).on('click','.close-log-modal',function(e){
+        e.preventDefault();
+        $('.status').html('OUT');
+        $('#example1').click();
+        $('#outModal').modal('hide');
     })
 </script>
 @endsection
