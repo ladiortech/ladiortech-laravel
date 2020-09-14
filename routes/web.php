@@ -28,7 +28,7 @@ Route::group(['prefix'=>'adminp','middleware'=>['auth','user']],function(){
     Route::get('/attendance','AttendanceController@index')->name('attendance');
     Route::post('/in-logtime','AttendanceController@inLog')->name('in-logtime');
     Route::post('/out-logtime','AttendanceController@outLog')->name('out-logtime');
-    Route::get('/log-details/{date?}','AttendanceController@getLogDetails')->name('log-details');
+    Route::get('/attendance-details','AttendanceController@getLogDetails')->name('log-details');
     
 });
 // Auth::routes();

@@ -41,9 +41,9 @@ class AttendanceController extends Controller
     	$user->save();
     	return response('success',202);
     }
-    public function getLogDetails($date)
+    public function getLogDetails(Request $request)
     {
-    	$logs = Log::where([['user_id','=',Auth::id()],['date','=',$date]])->get();
-    	return view('admin.log_details',compact('logs'));
+    	$logs = Log::where([['user_id','=',Auth::id()],['date','=',$request->date]])->get();
+    	return view('admin.attendance-details',compact('logs'));
     }
 }

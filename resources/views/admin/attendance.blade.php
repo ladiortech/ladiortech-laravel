@@ -38,7 +38,7 @@
                                         <td>{!! $key+1 !!}</td>
                                         <td>{!! $log->date !!}</td>
                                         <td>{!! number_format((float)($log->total/60), 2, '.', ''); !!}</td>
-                                        <td><a href="{!! route('log-details',$log->date) !!}" class="btn btn-primary"><i class="fa fa-eye"></i></a></td>
+                                        <td><a href="{!! url('adminp/attendance-details?date='.$log->date) !!}" class="btn btn-primary"><i class="fa fa-eye"></i></a></td>
                                     </tr>    
                                 @endforeach
                             </tbody>
