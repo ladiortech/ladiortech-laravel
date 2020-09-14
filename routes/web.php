@@ -29,7 +29,8 @@ Route::group(['prefix'=>'adminp','middleware'=>['auth','user']],function(){
     Route::post('/in-logtime','AttendanceController@inLog')->name('in-logtime');
     Route::post('/out-logtime','AttendanceController@outLog')->name('out-logtime');
     Route::get('/attendance-details','AttendanceController@getLogDetails')->name('log-details');
-    
+    Route::get('/user-attendance','AttendanceController@getUserAttendance')->name('user-attendance');
+    Route::post('/filter-user-attendance','AttendanceController@filterUserAttendance')->name('filter-user-attendance');
 });
 // Auth::routes();
 Route::post('logout','Auth\LoginController@logout')->middleware('web')->name('logout');

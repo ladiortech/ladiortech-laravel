@@ -32,10 +32,18 @@
          <li class="active">
             <a href=""><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
          </li>
-         <li>
-            <a href="{!! route('attendance') !!}" aria-expanded="false">
-            <i class="fa fa-bar-chart-o"></i> <span class="nav-label">Attendance</span></a>
-         </li>
+         @if(Auth::user()->role == 'admin')
+            <li>
+               <a href="{!! route('user-attendance') !!}" aria-expanded="false">
+               <i class="fa fa-bar-chart-o"></i> <span class="nav-label">User Attendance</span></a>
+            </li>
+         @else
+            <li>
+               <a href="{!! route('attendance') !!}" aria-expanded="false">
+               <i class="fa fa-bar-chart-o"></i> <span class="nav-label">Attendance</span></a>
+            </li>
+
+         @endif
       </ul>
    </div>
 </nav>

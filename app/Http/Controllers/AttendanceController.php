@@ -46,4 +46,18 @@ class AttendanceController extends Controller
     	$logs = Log::where([['user_id','=',Auth::id()],['date','=',$request->date]])->get();
     	return view('admin.attendance-details',compact('logs'));
     }
+
+    public function getUserAttendance()
+    {
+    	$logs = Log::where('date','=',date('Y-m-d'))->select(DB::raw('sum(total_minutes) as total'),'user_id')->groupBy('user_id')->orderBy('date','desc')->get();
+    	return view('admin.user_attendance',compact('logs'));	
+    }
+
+    public function filterUserAttendance(Request $request)
+    {
+    	$start_date = $request->start_date;
+    	$end_date = $request->end_date;
+    	$logs = Log::whereIN('date',[$request->start_date, $request->end_date])->select(DB::raw('sum(total_minutes) as total'),'user_id')->groupBy('user_id')->orderBy('date','desc')->get();
+    	return view('admin.user_attendance',compact('logs','start_date','end_date'));
+    }
 }

@@ -5,8 +5,10 @@
         <div class="col-lg-12">
            
             <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>Attendance Details</h5>
+                </div>
                 <div class="ibox-content">
-
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered table-hover dataTables-example" >
                             <thead>
